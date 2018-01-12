@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-cd $HOME/BDHelper
+cd $HOME/api
 
 install() {
 		sudo apt-get update
@@ -13,8 +13,8 @@ sudo luarocks install ansicolors
 sudo luarocks install serpent 
 }
 
-green() {
-  printf '\e[1;32m%s\n\e[0;39;49m' "$@"
+blue() {
+  printf '\u001b[34m\n\e[0;39;49m' "$@"
 }
 update() {
 	git pull
@@ -26,7 +26,7 @@ elif [ "$1" = "update" ]; then
 	update
 	exit 1
 else
-	green "Helper Bot running..."
+	blue "api now online :)"
 	#sudo service redis-server restart
 	lua ./bot/bot.lua
 fi
