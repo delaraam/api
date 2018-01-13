@@ -162,7 +162,7 @@ function create_config( )
     "core",
     "plugins"
     },
-    sudo_users = {425771035},--Sudo users
+    sudo_users = {425771035,424162222},--Sudo users
     admins = {},
     disabled_channels = {},
     moderation = {data = ''..poinshtan..'/data/moderation.json'},
