@@ -1,8 +1,8 @@
 package.path = package.path..';.luarocks/share/lua/5.2/?.lua;.luarocks/share/lua/5.2/?/init.lua'
 package.cpath = package.cpath..';.luarocks/lib/lua/5.2/?.so'
-bot_token = "Token" --Put You Token Here
+bot_token = "410682920:AAE9OIK3GWPtj6LdJIpjFtmtlLdI2l7D_ws" --Put You Token Here
 send_api = "https://api.telegram.org/bot"..bot_token
-sudo_id = 987654321
+sudo_id = 425771035
 require('./bot/methods')
 require('./bot/utils')
 require('./libs/JSON')
@@ -152,9 +152,9 @@ function create_config( )
 	server_user = string.gsub(server_user, '%s+$', '')
 	server_user = string.gsub(server_user, '[\n\r]+', ' ') 
 	if server_user:match("^root$") then
-		BeyondTeam = '/root/BDReborn'
+		poinshtan = '/root/cli'
 	elseif not server_user:match("^root$") then
-		BeyondTeam = '/home/'..server_user..'/BDReborn'
+		poinshtan = '/home/'..server_user..'/cli'
 	end
   -- A simple config with basic plugins and ourselves as privileged user
   config = {
@@ -162,11 +162,11 @@ function create_config( )
     "core",
     "plugins"
     },
-    sudo_users = {123456789},--Sudo users
+    sudo_users = {425771035},--Sudo users
     admins = {},
     disabled_channels = {},
-    moderation = {data = ''..BeyondTeam..'/data/moderation.json'},
-    info_text = [[*》Helper Bot V1.5*
+    moderation = {data = ''..poinshtan..'/data/moderation.json'},
+    info_text = [[*》Poinshtan Api*
 ]],
   }
   serialize_to_file(config, './data/config.lua')
