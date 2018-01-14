@@ -233,8 +233,8 @@ local lang = redis:get(hash)
 			{text = lock_join, callback_data="/lockjoin:"..GP_id}
 		},
 		{
-			{text = "Flood", callback_data='BeyondTeam'}, 
-			{text = lock_flood, callback_data="/lockflood:"..GP_id},
+			{text = "Welcome", callback_data='BeyondTeam'}, 
+			{text = group_welcone, callback_data="/welcome:"..GP_id},
 			{text = "Spam", callback_data='BeyondTeam'}, 
 			{text = lock_spam, callback_data="/lockspam:"..GP_id}
 		},
@@ -257,8 +257,8 @@ local lang = redis:get(hash)
 			{text = lock_bots, callback_data="/lockbots:"..GP_id}
 		},
 		{
-			{text = "> Group Welcome", callback_data='BeyondTeam'}, 
-			{text = group_welcone, callback_data="/welcome:"..GP_id}
+			{text = "Flood", callback_data='BeyondTeam'}, 
+			{text = lock_flood, callback_data="/lockflood:"..GP_id}
 		},
 		{
 			{text = '> More Settings ', callback_data = '/moresettings:'..GP_id}
@@ -284,8 +284,8 @@ local lang = redis:get(hash)
 			{text = lock_join, callback_data="/lockjoin:"..GP_id}
 		},
 		{
-			{text = "پیام مکرر", callback_data='BeyondTeam'}, 
-			{text = lock_flood, callback_data="/lockflood:"..GP_id},
+			{text = "خوشآمد", callback_data='BeyondTeam'}, 
+			{text = group_welcone, callback_data="/welcome:"..GP_id},
 			{text = "هرزنامه", callback_data='BeyondTeam'}, 
 			{text = lock_spam, callback_data="/lockspam:"..GP_id}
 		},
@@ -308,8 +308,8 @@ local lang = redis:get(hash)
 			{text = lock_bots, callback_data="/lockbots:"..GP_id}
 		},
 		{
-			{text = "> خوشآمد گویی", callback_data='BeyondTeam'}, 
-			{text = group_welcone, callback_data="/welcome:"..GP_id}
+			{text = "پیام مکرر", callback_data='BeyondTeam'}, 
+			{text = lock_flood, callback_data="/lockflood:"..GP_id}
 		},
 		{
 			{text = '> تنظیمات بیشتر ', callback_data = '/moresettings:'..GP_id}
@@ -457,12 +457,12 @@ local lang = redis:get(hash)
 		{
 			{text = "Document", callback_data='BeyondTeam'}, 
 			{text = mute_document, callback_data="/mutedocument:"..GP_id},
-			{text = "TgService", callback_data='BeyondTeam'}, 
-			{text = mute_tgservice, callback_data="/mutetgservice:"..GP_id}
+			{text = "Keyboard", callback_data='BeyondTeam'}, 
+			{text = mute_keyboard, callback_data="/mutekeyboard:"..GP_id}
 		},
 	        {
-			{text = "> Mute Keyboard", callback_data='BeyondTeam'}, 
-			{text = mute_keyboard, callback_data="/mutekeyboard:"..GP_id}
+			{text = "TgService", callback_data='BeyondTeam'}, 
+			{text = mute_tgservice, callback_data="/mutetgservice:"..GP_id}
 		},
 		{
 			{text = '> Back ', callback_data = '/option:'..GP_id}
@@ -515,12 +515,12 @@ local lang = redis:get(hash)
 		{
 			{text = "فایل", callback_data='BeyondTeam'}, 
 			{text = mute_document, callback_data="/mutedocument:"..GP_id},
-			{text = "خدمات تلگرام", callback_data='BeyondTeam'}, 
-			{text = mute_tgservice, callback_data="/mutetgservice:"..GP_id}
+			{text = "کیبورد", callback_data='BeyondTeam'}, 
+			{text = mute_keyboard, callback_data="/mutekeyboard:"..GP_id}
 		},
 		{
-			{text = "> بیصدا کیبورد", callback_data='BeyondTeam'}, 
-			{text = mute_keyboard, callback_data="/mutekeyboard:"..GP_id}
+			{text = "خدمات تلگرام", callback_data='BeyondTeam'}, 
+			{text = mute_tgservice, callback_data="/mutetgservice:"..GP_id}
 		},
 		{
 			{text = '> بازگشت ', callback_data = '/option:'..GP_id}
