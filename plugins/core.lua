@@ -53,7 +53,7 @@ local lang = redis:get(hash)
 		}				
 	}
   elseif lang then
-	 text = '_به تنظیمات کلی خوشآمدید_'
+	 text = '_به تنظیمات شیشه ای خوش آمدید_'
 	keyboard = {} 
 	keyboard.inline_keyboard = {
 		{
@@ -2675,7 +2675,7 @@ if matches[1] == '/exit' then
     if not lang then
 		 text = '*Group Option Closed*'
    elseif lang then
-		 text = '_تنظیمات کلی بسته شده_'
+		 text = '_تنظیمات شیشه ای بسته شده_'
    end
 		edit_inline(msg.message_id, text)
 	end
