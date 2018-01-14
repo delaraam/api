@@ -221,39 +221,39 @@ local lang = redis:get(hash)
 	keyboard = {} 
 	keyboard.inline_keyboard = {
 		{
-			{text = "> Lock Edit", callback_data='BeyondTeam'}, 
+			{text = "Edit", callback_data='BeyondTeam'}, 
 			{text = lock_edit, callback_data="/lockedit:"..GP_id},
-			{text = "> Lock Link", callback_data='BeyondTeam'}, 
+			{text = "Link", callback_data='BeyondTeam'}, 
 			{text = lock_link, callback_data="/locklink:"..GP_id}
 		},
 		{
-			{text = "> Lock Tags", callback_data='BeyondTeam'}, 
+			{text = "Tags", callback_data='BeyondTeam'}, 
 			{text = lock_tag, callback_data="/locktags:"..GP_id},
-			{text = "> Lock Join", callback_data='BeyondTeam'}, 
+			{text = "Join", callback_data='BeyondTeam'}, 
 			{text = lock_join, callback_data="/lockjoin:"..GP_id}
 		},
 		{
-			{text = "> Lock Flood", callback_data='BeyondTeam'}, 
+			{text = "Flood", callback_data='BeyondTeam'}, 
 			{text = lock_flood, callback_data="/lockflood:"..GP_id},
-			{text = "> Lock Spam", callback_data='BeyondTeam'}, 
+			{text = "Spam", callback_data='BeyondTeam'}, 
 			{text = lock_spam, callback_data="/lockspam:"..GP_id}
 		},
 		{
-			{text = "> Lock Mention", callback_data='BeyondTeam'}, 
+			{text = "Mention", callback_data='BeyondTeam'}, 
 			{text = lock_mention, callback_data="/lockmention:"..GP_id},
-			{text = "> Lock Arabic", callback_data='BeyondTeam'}, 
+			{text = "Arabic", callback_data='BeyondTeam'}, 
 			{text = lock_arabic, callback_data="/lockarabic:"..GP_id}
 		},
 		{
-			{text = "> Lock Webpage", callback_data='BeyondTeam'}, 
+			{text = "Webpage", callback_data='BeyondTeam'}, 
 			{text = lock_webpage, callback_data="/lockwebpage:"..GP_id},
-			{text = "> Lock Markdown", callback_data='BeyondTeam'}, 
+			{text = "Markdown", callback_data='BeyondTeam'}, 
 			{text = lock_markdown, callback_data="/lockmarkdown:"..GP_id}
 		},
 		{
-			{text = "> Lock Pin", callback_data='BeyondTeam'}, 
+			{text = "Pin", callback_data='BeyondTeam'}, 
 			{text = lock_pin, callback_data="/lockpin:"..GP_id},
-			{text = "> Lock Bots", callback_data='BeyondTeam'}, 
+			{text = "Bots", callback_data='BeyondTeam'}, 
 			{text = lock_bots, callback_data="/lockbots:"..GP_id}
 		},
 		{
@@ -272,39 +272,39 @@ local lang = redis:get(hash)
 	keyboard = {} 
 	keyboard.inline_keyboard = {
 		{
-			{text = "> قفل ویرایش", callback_data='BeyondTeam'}, 
+			{text = "ویرایش", callback_data='BeyondTeam'}, 
 			{text = lock_edit, callback_data="/lockedit:"..GP_id},
-			{text = "> قفل لینک", callback_data='BeyondTeam'}, 
+			{text = "لینک", callback_data='BeyondTeam'}, 
 			{text = lock_link, callback_data="/locklink:"..GP_id}
 		},
 		{
-			{text = "> قفل تگ", callback_data='BeyondTeam'}, 
+			{text = "تگ", callback_data='BeyondTeam'}, 
 			{text = lock_tag, callback_data="/locktags:"..GP_id},
-			{text = "> قفل ورود", callback_data='BeyondTeam'}, 
+			{text = "ورود", callback_data='BeyondTeam'}, 
 			{text = lock_join, callback_data="/lockjoin:"..GP_id}
 		},
 		{
-			{text = "> قفل پیام های مکرر", callback_data='BeyondTeam'}, 
+			{text = "پیام مکرر", callback_data='BeyondTeam'}, 
 			{text = lock_flood, callback_data="/lockflood:"..GP_id},
-			{text = "> قفل هرزنامه", callback_data='BeyondTeam'}, 
+			{text = "هرزنامه", callback_data='BeyondTeam'}, 
 			{text = lock_spam, callback_data="/lockspam:"..GP_id}
 		},
 		{
-			{text = "> قفل فراخوانی", callback_data='BeyondTeam'}, 
+			{text = "فراخوانی", callback_data='BeyondTeam'}, 
 			{text = lock_mention, callback_data="/lockmention:"..GP_id},
-			{text = "> قفل عربی", callback_data='BeyondTeam'}, 
+			{text = "عربی", callback_data='BeyondTeam'}, 
 			{text = lock_arabic, callback_data="/lockarabic:"..GP_id}
 		},
 		{
-			{text = "> قفل صفحات وب", callback_data='BeyondTeam'}, 
+			{text = "وب", callback_data='BeyondTeam'}, 
 			{text = lock_webpage, callback_data="/lockwebpage:"..GP_id},
-			{text = "> قفل فونت", callback_data='BeyondTeam'}, 
+			{text = "فونت", callback_data='BeyondTeam'}, 
 			{text = lock_markdown, callback_data="/lockmarkdown:"..GP_id}
 		},
 		{
-			{text = "> قفل سنجاق کردن", callback_data='BeyondTeam'}, 
+			{text = "سنجاق", callback_data='BeyondTeam'}, 
 			{text = lock_pin, callback_data="/lockpin:"..GP_id},
-			{text = "> قفل ربات ها", callback_data='BeyondTeam'}, 
+			{text = "ربات ها", callback_data='BeyondTeam'}, 
 			{text = lock_bots, callback_data="/lockbots:"..GP_id}
 		},
 		{
@@ -419,45 +419,45 @@ local lang = redis:get(hash)
 			{text = mute_all, callback_data="/muteall:"..GP_id}
 		},
 		{
-			{text = "> Mute Gifs", callback_data='BeyondTeam'}, 
+			{text = "Gifs", callback_data='BeyondTeam'}, 
 			{text = mute_gif, callback_data="/mutegif:"..GP_id},
-			{text = "> Mute Text", callback_data='BeyondTeam'}, 
+			{text = "Text", callback_data='BeyondTeam'}, 
 			{text = mute_text, callback_data="/mutetext:"..GP_id}
 		},
 		{
-			{text = "> Mute Inline", callback_data='BeyondTeam'}, 
+			{text = "Inline", callback_data='BeyondTeam'}, 
 			{text = mute_inline, callback_data="/muteinline:"..GP_id},
-			{text = "> Mute Game", callback_data='BeyondTeam'}, 
+			{text = "Game", callback_data='BeyondTeam'}, 
 			{text = mute_game, callback_data="/mutegame:"..GP_id}
 		},
 		{
-			{text = "> Mute Photo", callback_data='BeyondTeam'}, 
+			{text = "Photo", callback_data='BeyondTeam'}, 
 			{text = mute_photo, callback_data="/mutephoto:"..GP_id},
-		        {text = "> Mute Video", callback_data='BeyondTeam'}, 
+		        {text = "Video", callback_data='BeyondTeam'}, 
 			{text = mute_video, callback_data="/mutevideo:"..GP_id}
 		},
 		{
-			{text = "> Mute Audio", callback_data='BeyondTeam'}, 
+			{text = "Audio", callback_data='BeyondTeam'}, 
 			{text = mute_audio, callback_data="/muteaudio:"..GP_id},
-			{text = "> Mute Voice", callback_data='BeyondTeam'}, 
+			{text = "Voice", callback_data='BeyondTeam'}, 
 			{text = mute_voice, callback_data="/mutevoice:"..GP_id}
 		},
 		{
-			{text = "> Mute Sticker", callback_data='BeyondTeam'}, 
+			{text = "Sticker", callback_data='BeyondTeam'}, 
 			{text = mute_sticker, callback_data="/mutesticker:"..GP_id},
-			{text = "> Mute Contact", callback_data='BeyondTeam'}, 
+			{text = "Contact", callback_data='BeyondTeam'}, 
 			{text = mute_contact, callback_data="/mutecontact:"..GP_id}
 		},
 		{
-			{text = "> Mute Forward", callback_data='BeyondTeam'}, 
+			{text = "Forward", callback_data='BeyondTeam'}, 
 			{text = mute_forward, callback_data="/muteforward:"..GP_id},
-			{text = "> Mute Location", callback_data='BeyondTeam'}, 
+			{text = "Location", callback_data='BeyondTeam'}, 
 			{text = mute_location, callback_data="/mutelocation:"..GP_id}
 		},
 		{
-			{text = "> Mute Document", callback_data='BeyondTeam'}, 
+			{text = "Document", callback_data='BeyondTeam'}, 
 			{text = mute_document, callback_data="/mutedocument:"..GP_id},
-			{text = "> Mute TgService", callback_data='BeyondTeam'}, 
+			{text = "TgService", callback_data='BeyondTeam'}, 
 			{text = mute_tgservice, callback_data="/mutetgservice:"..GP_id}
 		},
 	        {
@@ -477,45 +477,45 @@ local lang = redis:get(hash)
 			{text = mute_all, callback_data="/muteall:"..GP_id}
 		},
 		{
-			{text = "> بیصدا تصاویر متحرک", callback_data='BeyondTeam'}, 
+			{text = "گیف", callback_data='BeyondTeam'}, 
 			{text = mute_gif, callback_data="/mutegif:"..GP_id},
-			{text = "> بیصدا متن", callback_data='BeyondTeam'}, 
+			{text = "متن", callback_data='BeyondTeam'}, 
 			{text = mute_text, callback_data="/mutetext:"..GP_id}
 		},
 		{
-			{text = "> بیصدا اینلاین", callback_data='BeyondTeam'}, 
+			{text = "اینلاین", callback_data='BeyondTeam'}, 
 			{text = mute_inline, callback_data="/muteinline:"..GP_id},
-			{text = "> بیصدا بازی", callback_data='BeyondTeam'}, 
+			{text = "بازی", callback_data='BeyondTeam'}, 
 			{text = mute_game, callback_data="/mutegame:"..GP_id}
 		},
 		{
-			{text = "> بیصدا عکس", callback_data='BeyondTeam'}, 
+			{text = "عکس", callback_data='BeyondTeam'}, 
 			{text = mute_photo, callback_data="/mutephoto:"..GP_id},
-			{text = "> بیصدا فیلم", callback_data='BeyondTeam'}, 
+			{text = "فیلم", callback_data='BeyondTeam'}, 
 			{text = mute_video, callback_data="/mutevideo:"..GP_id}
 		},
 		{
-			{text = "> بیصدا آهنگ", callback_data='BeyondTeam'}, 
+			{text = "آهنگ", callback_data='BeyondTeam'}, 
 			{text = mute_audio, callback_data="/muteaudio:"..GP_id},
-			{text = "> بیصدا صدا", callback_data='BeyondTeam'}, 
+			{text = "صدا", callback_data='BeyondTeam'}, 
 			{text = mute_voice, callback_data="/mutevoice:"..GP_id}
 		},
 		{
-			{text = "> بیصدا استیکر", callback_data='BeyondTeam'}, 
+			{text = "استیکر", callback_data='BeyondTeam'}, 
 			{text = mute_sticker, callback_data="/mutesticker:"..GP_id},
-			{text = "> بیصدا مخاطب", callback_data='BeyondTeam'}, 
+			{text = "مخاطب", callback_data='BeyondTeam'}, 
 			{text = mute_contact, callback_data="/mutecontact:"..GP_id}
 		},
 		{
-			{text = "> بیصدا نقل و قول", callback_data='BeyondTeam'}, 
+			{text = "نقل و قول", callback_data='BeyondTeam'}, 
 			{text = mutes.mute_forward, callback_data="/muteforward:"..GP_id},
-			{text = "> بیصدا موقعیت", callback_data='BeyondTeam'}, 
+			{text = "موقعیت", callback_data='BeyondTeam'}, 
 			{text = mute_location, callback_data="/mutelocation:"..GP_id}
 		},
 		{
-			{text = "> بیصدا فایل", callback_data='BeyondTeam'}, 
+			{text = "فایل", callback_data='BeyondTeam'}, 
 			{text = mute_document, callback_data="/mutedocument:"..GP_id},
-			{text = "> بیصدا خدمات تلگرام", callback_data='BeyondTeam'}, 
+			{text = "خدمات تلگرام", callback_data='BeyondTeam'}, 
 			{text = mute_tgservice, callback_data="/mutetgservice:"..GP_id}
 		},
 		{
@@ -596,13 +596,13 @@ if msg.query and msg.query:match("-%d+") and is_sudo(msg) then
 	keyboard = {}
 	keyboard.inline_keyboard = {
 		{
-			{text = ' `قـابـلیـت هـای ربـات` ', callback_data = '/lang:'..chatid}
+			{text = ' قـابـلیـت هـای ربـات ', callback_data = '/lang:'..chatid}
 		},
 		{
-			{text= '`خــروج`' ,callback_data = '/exit:'..chatid}
+			{text= 'خــــروج' ,callback_data = '/exit:'..chatid}
 		}					
 	}
-	send_inline(msg.id,'settings','Group Option','Tap Here','`لطفا یکی از گزینه های زیر را انتخاب کنید`',keyboard)
+	send_inline(msg.id,'settings','Group Option','Tap Here','لطفا یکی از گزینه های زیر را انتخاب کنید',keyboard)
 end
 if msg.cb then
 local hash = "gp_lang:"..matches[2]
@@ -629,7 +629,7 @@ local lang = redis:get(hash)
 			{text = '> فارسی ', callback_data = '/persian:'..matches[2]}
 		},
 		{
-			{text= '> `خــروج`' ,callback_data = '/exit:'..matches[2]}
+			{text= '> خــــروج' ,callback_data = '/exit:'..matches[2]}
 		}				
 	}
     edit_inline(msg.message_id, text, keyboard)
