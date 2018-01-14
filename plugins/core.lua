@@ -136,7 +136,7 @@ local settings = data[tostring(GP_id)]["settings"]
 			{text = "➖", callback_data='/floodtimedown:'..GP_id}
 		},
 		{
-			{text = '> Back ', callback_data = '/settings:'..GP_id}
+			{text = 'بـرگـشــت', callback_data = '/settings:'..GP_id}
 		}				
 	}
    end
