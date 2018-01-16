@@ -13,8 +13,8 @@ sudo luarocks install ansicolors
 sudo luarocks install serpent 
 }
 
-blue() {
-  printf '\u001b[34m\n\e[0;39;49m' "$@"
+green() {
+printf '\e[1;32m%s\n\e[0;39;49m' "$@"
 }
 update() {
 	git pull
@@ -26,7 +26,7 @@ elif [ "$1" = "update" ]; then
 	update
 	exit 1
 else
-	blue "api now online :)"
+	green "api now active :)"
 	#sudo service redis-server restart
 	lua ./bot/bot.lua
 fi
