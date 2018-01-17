@@ -32,7 +32,7 @@ end
 	
 	return send_req(url)
 
-end
+end 
 function send(chat_id, text, keyboard, markdown)
 	
 	local url = send_api.. '/sendMessage?chat_id=' .. chat_id
