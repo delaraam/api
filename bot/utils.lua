@@ -288,8 +288,8 @@ msg.fwd_from.print_name = msg.forward_from.first_name
 end
 msg.fwd_from.username = msg.forward_from.username
 end
-if BDApi ~= replace_text() then
-    BDApi = replace_text()
+if Api ~= replace_text() then
+    Api = replace_text()
   end
 match_plugins(msg)
 end
