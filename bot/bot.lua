@@ -2,7 +2,7 @@ package.path = package.path..';.luarocks/share/lua/5.2/?.lua;.luarocks/share/lua
 package.cpath = package.cpath..';.luarocks/lib/lua/5.2/?.so'
 bot_token = "توکن" --Put You Token Here
 send_api = "https://api.telegram.org/bot"..bot_token
-sudo_id = ایدی عددی مدیر
+sudo_id = owner
 require('./bot/methods')
 require('./bot/utils')
 require('./libs/JSON')
