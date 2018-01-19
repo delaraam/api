@@ -42,14 +42,14 @@ local lang = redis:get(hash)
 	keyboard = {} 
 	keyboard.inline_keyboard = {
 		{
-			{text = "> Settings", callback_data="/settings:"..GP_id},
-			{text = "> MuteList", callback_data="/mutelist:"..GP_id}
+			{text = "♦️Settings♦️", callback_data="/settings:"..GP_id},
+			{text = "♦️MuteList♦️", callback_data="/mutelist:"..GP_id}
 		},
 		{
-			{text = '> More ', callback_data = '/more:'..GP_id}
+			{text = '♦️More♦️', callback_data = '/more:'..GP_id}
 		},
 		{
-			{text= '> Back' ,callback_data = '/lang:'..GP_id}
+			{text= '♦️Back♦️' ,callback_data = '/lang:'..GP_id}
 		}				
 	}
   elseif lang then
@@ -57,14 +57,14 @@ local lang = redis:get(hash)
 	keyboard = {} 
 	keyboard.inline_keyboard = {
 		{
-			{text = "> تنظیمات", callback_data="/settings:"..GP_id},
-			{text = "> لیست بیصدا", callback_data="/mutelist:"..GP_id}
+			{text = "♦️تنظیمات♦️", callback_data="/settings:"..GP_id},
+			{text = "♦️لیست بیصدا♦️", callback_data="/mutelist:"..GP_id}
 		},
 		{
-			{text = '> قابلیت های بیشتر ', callback_data = '/more:'..GP_id}
+			{text = '♦️قابلیت های بیشتر♦️', callback_data = '/more:'..GP_id}
 		},
 		{
-			{text= '> بازگشت' ,callback_data = '/lang:'..GP_id}
+			{text= '♦️بازگشت♦️' ,callback_data = '/lang:'..GP_id}
 		}				
 	}
   end
@@ -80,7 +80,7 @@ local settings = data[tostring(GP_id)]["settings"]
 	keyboard = {} 
 	keyboard.inline_keyboard = {
 		{
-			{text = '> Flood Sensitivity ', callback_data = 'BeyondTeam'}
+			{text = '♦️Flood Sensitivity♦️', callback_data = 'BeyondTeam'}
 		},
 		{
 			{text = "🔺", callback_data='/floodup:'..GP_id}, 
@@ -88,7 +88,7 @@ local settings = data[tostring(GP_id)]["settings"]
 			{text = "🔻", callback_data='/flooddown:'..GP_id}
 		},
 		{
-			{text = '> Character Sensitivity ', callback_data = 'BeyondTeam'}
+			{text = '♦️Character Sensitivity♦️', callback_data = 'BeyondTeam'}
 		},
 		{
 			{text = "🔺", callback_data='/charup:'..GP_id}, 
@@ -96,7 +96,7 @@ local settings = data[tostring(GP_id)]["settings"]
 			{text = "🔻", callback_data='/chardown:'..GP_id}
 		},
 		{
-			{text = '> Flood Check Time ', callback_data = 'BeyondTeam'}
+			{text = '♦️Flood Check Time♦️', callback_data = 'BeyondTeam'}
 		},
 		{
 			{text = "🔺", callback_data='/floodtimeup:'..GP_id}, 
@@ -104,7 +104,7 @@ local settings = data[tostring(GP_id)]["settings"]
 			{text = "🔻", callback_data='/floodtimedown:'..GP_id}
 		},
 		{
-			{text = '> Back ', callback_data = '/settings:'..GP_id}
+			{text = '♦️Back♦️', callback_data = '/settings:'..GP_id}
 		}				
 	}
    elseif lang then
@@ -112,7 +112,7 @@ local settings = data[tostring(GP_id)]["settings"]
 	keyboard = {} 
 	keyboard.inline_keyboard = {
 		{
-			{text = '> حداکثر پیام های مکرر ', callback_data = 'BeyondTeam'}
+			{text = '♦️حداکثر پیام های مکرر♦️', callback_data = 'BeyondTeam'}
 		},
 		{
 			{text = "🔺", callback_data='/floodup:'..GP_id}, 
@@ -120,7 +120,7 @@ local settings = data[tostring(GP_id)]["settings"]
 			{text = "🔻", callback_data='/flooddown:'..GP_id}
 		},
 		{
-			{text = '> حداکثر حروف مجاز ', callback_data = 'BeyondTeam'}
+			{text = '♦️حداکثر حروف مجاز♦️', callback_data = 'BeyondTeam'}
 		},
 		{
 			{text = "🔺", callback_data='/charup:'..GP_id}, 
@@ -128,7 +128,7 @@ local settings = data[tostring(GP_id)]["settings"]
 			{text = "🔻", callback_data='/chardown:'..GP_id}
 		},
 		{
-			{text = '> زمان بررسی پیام های مکرر ', callback_data = 'BeyondTeam'}
+			{text = '♦️زمان بررسی پیام های مکرر♦️', callback_data = 'BeyondTeam'}
 		},
 		{
 			{text = "🔺", callback_data='/floodtimeup:'..GP_id}, 
@@ -136,7 +136,7 @@ local settings = data[tostring(GP_id)]["settings"]
 			{text = "🔻", callback_data='/floodtimedown:'..GP_id}
 		},
 		{
-			{text = 'بـرگـشــت', callback_data = '/settings:'..GP_id}
+			{text = '♦️بـرگـشــت♦️', callback_data = '/settings:'..GP_id}
 		}				
 	}
    end
@@ -257,14 +257,14 @@ local lang = redis:get(hash)
 			{text = lock_bots, callback_data="/lockbots:"..GP_id}
 		},
 		{
-			{text = "> Group Welcome", callback_data='BeyondTeam'}, 
+			{text = "Group Welcome", callback_data='BeyondTeam'}, 
 			{text = group_welcone, callback_data="/welcome:"..GP_id}
 		},
 		{
-			{text = '> More Settings ', callback_data = '/moresettings:'..GP_id}
+			{text = '♦️More Settings♦️', callback_data = '/moresettings:'..GP_id}
 		},
 		{
-			{text = '> Back ', callback_data = '/option:'..GP_id}
+			{text = '♦️Back♦️', callback_data = '/option:'..GP_id}
 		}				
 	}
      elseif lang then
@@ -308,14 +308,14 @@ local lang = redis:get(hash)
 			{text = lock_bots, callback_data="/lockbots:"..GP_id}
 		},
 		{
-			{text = "> خوشآمد گویی", callback_data='BeyondTeam'}, 
+			{text = "خوشآمد گویی", callback_data='BeyondTeam'}, 
 			{text = group_welcone, callback_data="/welcome:"..GP_id}
 		},
 		{
-			{text = '> تنظیمات بیشتر ', callback_data = '/moresettings:'..GP_id}
+			{text = '♦️تنظیمات بیشتر♦️', callback_data = '/moresettings:'..GP_id}
 		},
 		{
-			{text = '> بازگشت ', callback_data = '/option:'..GP_id}
+			{text = '♦️بازگشت♦️', callback_data = '/option:'..GP_id}
 		}				
 	}
   end
@@ -415,7 +415,7 @@ local lang = redis:get(hash)
 	keyboard = {} 
 	keyboard.inline_keyboard = {
 		{
-			{text = "> Mute All", callback_data='BeyondTeam'}, 
+			{text = "⛔️Mute All⛔️", callback_data='BeyondTeam'}, 
 			{text = mute_all, callback_data="/muteall:"..GP_id}
 		},
 		{
@@ -461,11 +461,11 @@ local lang = redis:get(hash)
 			{text = mute_tgservice, callback_data="/mutetgservice:"..GP_id}
 		},
 	        {
-			{text = "> Mute Keyboard", callback_data='BeyondTeam'}, 
+			{text = "Keyboard", callback_data='BeyondTeam'}, 
 			{text = mute_keyboard, callback_data="/mutekeyboard:"..GP_id}
 		},
 		{
-			{text = '> Back ', callback_data = '/option:'..GP_id}
+			{text = '♦️Back♦️', callback_data = '/option:'..GP_id}
 		}				
 	}
    elseif lang then
@@ -473,7 +473,7 @@ local lang = redis:get(hash)
 	keyboard = {} 
 	keyboard.inline_keyboard = {
 		{
-			{text = "> بیصدا همه", callback_data='BeyondTeam'}, 
+			{text = "⛔️بیصدا همه⛔️", callback_data='BeyondTeam'}, 
 			{text = mute_all, callback_data="/muteall:"..GP_id}
 		},
 		{
@@ -519,11 +519,11 @@ local lang = redis:get(hash)
 			{text = mute_tgservice, callback_data="/mutetgservice:"..GP_id}
 		},
 		{
-			{text = "> بیصدا کیبورد", callback_data='BeyondTeam'}, 
+			{text = "کیبورد", callback_data='BeyondTeam'}, 
 			{text = mute_keyboard, callback_data="/mutekeyboard:"..GP_id}
 		},
 		{
-			{text = '> بازگشت ', callback_data = '/option:'..GP_id}
+			{text = '♦️بازگشت♦️', callback_data = '/option:'..GP_id}
 		}				
 	}
   end
@@ -596,10 +596,10 @@ if msg.query and msg.query:match("-%d+") and is_sudo(msg) then
 	keyboard = {}
 	keyboard.inline_keyboard = {
 		{
-			{text = ' قـابـلیـت هـای ربـات ', callback_data = '/lang:'..chatid}
+			{text = '♦️قـابـلیـت هـای ربـات♦️', callback_data = '/lang:'..chatid}
 		},
 		{
-			{text= 'خــــروج' ,callback_data = '/exit:'..chatid}
+			{text= '♦️خــــروج♦️' ,callback_data = '/exit:'..chatid}
 		}					
 	}
 	send_inline(msg.id,'settings','Group Option','Tap Here','لطفا یکی از گزینه های زیر را انتخاب کنید',keyboard)
@@ -625,11 +625,11 @@ local lang = redis:get(hash)
 	keyboard = {} 
 	keyboard.inline_keyboard = {
 		{
-			{text = "> English", callback_data="/english:"..matches[2]},
-			{text = '> فارسی ', callback_data = '/persian:'..matches[2]}
+			{text = "♦️English♦️", callback_data="/english:"..matches[2]},
+			{text = '♦️فارسی♦️', callback_data = '/persian:'..matches[2]}
 		},
 		{
-			{text= '> خــــروج' ,callback_data = '/exit:'..matches[2]}
+			{text= '♦️خــــروج♦️' ,callback_data = '/exit:'..matches[2]}
 		}				
 	}
     edit_inline(msg.message_id, text, keyboard)
@@ -1764,52 +1764,52 @@ if matches[1] == '/more' then
 		keyboard = {} 
 		keyboard.inline_keyboard = {
 			{
-				{text = "> OwnerList", callback_data="/ownerlist:"..matches[2]},
-				{text = "> ModList", callback_data="/modlist:"..matches[2]}
+				{text = "♦️OwnerList♦️", callback_data="/ownerlist:"..matches[2]},
+				{text = "♦️ModList♦️", callback_data="/modlist:"..matches[2]}
 			},
 			{
-				{text = "> SillentList", callback_data="/silentlist:"..matches[2]},
-				{text = "> FilterList", callback_data="/filterlist:"..matches[2]}
+				{text = "♦️SillentList♦️", callback_data="/silentlist:"..matches[2]},
+				{text = "♦️FilterList♦️", callback_data="/filterlist:"..matches[2]}
 			},
 			{
-				{text = "> BanList", callback_data="/bans:"..matches[2]},
-				{text = "> WhiteList", callback_data="/whitelists:"..matches[2]}
+				{text = "♦️BanList♦️", callback_data="/bans:"..matches[2]},
+				{text = "♦️WhiteList♦️", callback_data="/whitelists:"..matches[2]}
         },
 			{
-				{text = "> Group Link", callback_data="/link:"..matches[2]},
-				{text = "> Group Rules", callback_data="/rules:"..matches[2]}
+				{text = "♦️Group Link♦️", callback_data="/link:"..matches[2]},
+				{text = "♦️Group Rules♦️", callback_data="/rules:"..matches[2]}
 			},
 			{
-				{text = "> Show Welcome", callback_data="/showwlc:"..matches[2]},
+				{text = "♦️Show Welcome♦️", callback_data="/showwlc:"..matches[2]},
 			},
 			{ 
-				{text = "> Back To Option", callback_data="/option:"..matches[2]}
+				{text = "♦️Back To Option♦️", callback_data="/option:"..matches[2]}
 			}
 		}
    elseif lang then
 		keyboard = {} 
 		keyboard.inline_keyboard = {
 			{
-				{text = "> لیست مالکین", callback_data="/ownerlist:"..matches[2]},
-				{text = "> لیست مدیران", callback_data="/modlist:"..matches[2]}
+				{text = "♦️لیست مالکین♦️", callback_data="/ownerlist:"..matches[2]},
+				{text = "♦️لیست مدیران♦️", callback_data="/modlist:"..matches[2]}
 			},
 			{
-				{text = "> لیست سایلنت", callback_data="/silentlist:"..matches[2]},
-				{text = "> لیست فیلتر", callback_data="/filterlist:"..matches[2]}
+				{text = "♦️لیست سایلنت♦️", callback_data="/silentlist:"..matches[2]},
+				{text = "♦️لیست فیلتر♦️", callback_data="/filterlist:"..matches[2]}
 			},
 			{
-				{text = "> لیست بن", callback_data="/bans:"..matches[2]},
-				{text = "> لیست سفید", callback_data="/whitelists:"..matches[2]}
+				{text = "♦️لیست بن♦️", callback_data="/bans:"..matches[2]},
+				{text = "♦️لیست سفید♦️", callback_data="/whitelists:"..matches[2]}
         },
 			{
-				{text = "> لینک گروه", callback_data="/link:"..matches[2]},
-				{text = "> قوانین گروه", callback_data="/rules:"..matches[2]}
+				{text = "♦️لینک گروه♦️", callback_data="/link:"..matches[2]},
+				{text = "♦️قوانین گروه♦️", callback_data="/rules:"..matches[2]}
 			},
 			{
-				{text = "> نمایش پیام خوشامد", callback_data="/showwlc:"..matches[2]},
+				{text = "♦️نمایش پیام خوشامد♦️", callback_data="/showwlc:"..matches[2]},
 			},
 			{ 
-				{text = "> بازگشت به تنظیمات کلی", callback_data="/option:"..matches[2]}
+				{text = "♦️بازگشت به تنظیمات کلی♦️", callback_data="/option:"..matches[2]}
 			}
 		}
   end
@@ -1847,20 +1847,20 @@ if matches[1] == '/ownerlist' then
 		keyboard = {} 
 		keyboard.inline_keyboard = {
 			{
-				{text = "> Demote All Owners", callback_data="/cleanowners:"..matches[2]}
+				{text = "♦️Demote All Owners♦️", callback_data="/cleanowners:"..matches[2]}
 			},
 			{ 
-				{text = "> Back", callback_data="/more:"..matches[2]}
+				{text = "♦️Back♦️", callback_data="/more:"..matches[2]}
 			}
 		}
    elseif lang then
 		keyboard = {} 
 		keyboard.inline_keyboard = {
 			{
-				{text = "> برکناری تمام مالکین", callback_data="/cleanowners:"..matches[2]}
+				{text = "♦️برکناری تمام مالکین♦️", callback_data="/cleanowners:"..matches[2]}
 			},
 			{ 
-				{text = "> بازگشت", callback_data="/more:"..matches[2]}
+				{text = "♦️بازگشت♦️", callback_data="/more:"..matches[2]}
 			}
 		}
   end
@@ -1897,14 +1897,14 @@ if matches[1] == '/cleanowners' then
 		keyboard = {} 
 		keyboard.inline_keyboard = {
 			{
-				{text = "> Back", callback_data="/ownerlist:"..matches[2]}
+				{text = "♦️Back♦️", callback_data="/ownerlist:"..matches[2]}
 			}
 		}
    elseif lang then
 		keyboard = {} 
 		keyboard.inline_keyboard = {
 			{
-				{text = "> بازگشت", callback_data="/ownerlist:"..matches[2]}
+				{text = "♦️بازگشت♦️", callback_data="/ownerlist:"..matches[2]}
 			}
 		}
    end
@@ -1942,20 +1942,20 @@ if matches[1] == '/filterlist' then
 		keyboard = {} 
 		keyboard.inline_keyboard = {
 			{
-				{text = "> Clean", callback_data="/cleanfilterlist:"..matches[2]}
+				{text = "♦️Clean♦️", callback_data="/cleanfilterlist:"..matches[2]}
 			},
 			{ 
-				{text = "> Back", callback_data="/more:"..matches[2]}
+				{text = "♦️Back♦️", callback_data="/more:"..matches[2]}
 			}
 		}
    elseif lang then
 		keyboard = {} 
 		keyboard.inline_keyboard = {
 			{
-				{text = "> پاک کردن", callback_data="/cleanfilterlist:"..matches[2]}
+				{text = "♦️پاک کردن♦️", callback_data="/cleanfilterlist:"..matches[2]}
 			},
 			{ 
-				{text = "> بازگشت", callback_data="/more:"..matches[2]}
+				{text = "♦️بازگشت♦️", callback_data="/more:"..matches[2]}
 			}
 		}
   end
@@ -1992,14 +1992,14 @@ if matches[1] == '/cleanfilterlist' then
 		keyboard = {} 
 		keyboard.inline_keyboard = {
 			{
-				{text = "> Back", callback_data="/filterlist:"..matches[2]}
+				{text = "♦️Back♦️", callback_data="/filterlist:"..matches[2]}
 			}
 		}
      elseif lang then
 		keyboard = {} 
 		keyboard.inline_keyboard = {
 			{
-				{text = "> بازگشت", callback_data="/filterlist:"..matches[2]}
+				{text = "♦️بازگشت♦️", callback_data="/filterlist:"..matches[2]}
 			}
 		}
   end
@@ -2037,20 +2037,20 @@ if matches[1] == '/modlist' then
 		keyboard = {} 
 		keyboard.inline_keyboard = {
 			{
-				{text = "> Demote All Moderators", callback_data="/cleanmods:"..matches[2]}
+				{text = "♦️Demote All Moderators♦️", callback_data="/cleanmods:"..matches[2]}
 			},
 			{ 
-				{text = "> Back", callback_data="/more:"..matches[2]}
+				{text = "♦️Back♦️", callback_data="/more:"..matches[2]}
 			}
 		}
    elseif lang then
 		keyboard = {} 
 		keyboard.inline_keyboard = {
 			{
-				{text = "> برکناری تمام مدیران", callback_data="/cleanmods:"..matches[2]}
+				{text = "♦️برکناری تمام مدیران♦️", callback_data="/cleanmods:"..matches[2]}
 			},
 			{ 
-				{text = "> بازگشت", callback_data="/more:"..matches[2]}
+				{text = "♦️بازگشت♦️", callback_data="/more:"..matches[2]}
 			}
 		}
   end
@@ -2086,7 +2086,7 @@ if matches[1] == '/cleanmods' then
 		keyboard = {} 
 		keyboard.inline_keyboard = {
 			{
-				{text = "> Back", callback_data="/modlist:"..matches[2]}
+				{text = "♦️Back♦️", callback_data="/modlist:"..matches[2]}
 			}
 		}
 		edit_inline(msg.message_id, text, keyboard)
@@ -2125,17 +2125,17 @@ if matches[1] == '/bans' then
 				{text = "> Unban All Banned Users", callback_data="/cleanbans:"..matches[2]}
 			},
 			{ 
-				{text = "> Back", callback_data="/more:"..matches[2]}
+				{text = "♦️Back♦️", callback_data="/more:"..matches[2]}
 			}
 		}
   elseif lang then
 		keyboard = {} 
 		keyboard.inline_keyboard = {
 			{
-				{text = "> پاک کردن لیست بن ", callback_data="/cleanbans:"..matches[2]}
+				{text = "♦️پاک کردن لیست بن♦️", callback_data="/cleanbans:"..matches[2]}
 			},
 			{ 
-				{text = "> بازگشت", callback_data="/more:"..matches[2]}
+				{text = "♦️بازگشت♦️", callback_data="/more:"..matches[2]}
 			}
 		}
   end
@@ -2172,20 +2172,20 @@ if matches[1] == '/silentlist' then
 		keyboard = {} 
 		keyboard.inline_keyboard = {
 			{
-				{text = "> Unsilent All Silent Users", callback_data="/cleansilentlist:"..matches[2]}
+				{text = "♦️Unsilent All Silent Users♦️", callback_data="/cleansilentlist:"..matches[2]}
 			},
 			{ 
-				{text = "> Back", callback_data="/more:"..matches[2]}
+				{text = "♦️Back♦️", callback_data="/more:"..matches[2]}
 			}
 		}
   elseif lang then
 		keyboard = {} 
 		keyboard.inline_keyboard = {
 			{
-				{text = "> پاک کردن لیست سایلنت", callback_data="/cleansilentlist:"..matches[2]}
+				{text = "♦️پاک کردن لیست سایلنت♦️", callback_data="/cleansilentlist:"..matches[2]}
 			},
 			{ 
-				{text = "> بازگشت", callback_data="/more:"..matches[2]}
+				{text = "♦️بازگشت♦️", callback_data="/more:"..matches[2]}
 			}
 		}
   end
@@ -2221,14 +2221,14 @@ if matches[1] == '/cleansilentlist' then
 		keyboard = {} 
 		keyboard.inline_keyboard = {
 			{
-				{text = "> Back", callback_data="/silentlist:"..matches[2]}
+				{text = "♦️Back♦️", callback_data="/silentlist:"..matches[2]}
 			}
 		}
   elseif lang then
 		keyboard = {} 
 		keyboard.inline_keyboard = {
 			{
-				{text = "> بازگشت", callback_data="/silentlist:"..matches[2]}
+				{text = "♦️بازگشت♦️", callback_data="/silentlist:"..matches[2]}
 			}
 		}
   end
@@ -2264,14 +2264,14 @@ if matches[1] == '/cleanbans' then
 		keyboard = {} 
 		keyboard.inline_keyboard = {
 			{
-				{text = "> Back", callback_data="/bans:"..matches[2]}
+				{text = "♦️Back♦️", callback_data="/bans:"..matches[2]}
 			}
 		}
   elseif lang then
 		keyboard = {} 
 		keyboard.inline_keyboard = {
 			{
-				{text = "> بازگشت", callback_data="/bans:"..matches[2]}
+				{text = "♦️بازگشت♦️", callback_data="/bans:"..matches[2]}
 			}
 		}
   end
@@ -2304,14 +2304,14 @@ if matches[1] == '/link' then
 		keyboard = {} 
 		keyboard.inline_keyboard = {
 			{
-				{text = "> Back", callback_data="/more:"..matches[2]}
+				{text = "♦️Back♦️", callback_data="/more:"..matches[2]}
 			}
 		}
   elseif lang then
 		keyboard = {} 
 		keyboard.inline_keyboard = {
 			{
-				{text = "> بازگشت", callback_data="/more:"..matches[2]}
+				{text = "♦️بازگشت♦️", callback_data="/more:"..matches[2]}
 			}
 		}
   end
@@ -2345,20 +2345,20 @@ if matches[1] == '/rules' then
 		keyboard = {} 
 		keyboard.inline_keyboard = {
 			{
-				{text = "> Clean", callback_data="/cleanrules:"..matches[2]}
+				{text = "♦️Clean♦️", callback_data="/cleanrules:"..matches[2]}
 			},
 			{ 
-				{text = "> Back", callback_data="/more:"..matches[2]}
+				{text = "♦️Back♦️", callback_data="/more:"..matches[2]}
 			}
 		}
   elseif lang then
 		keyboard = {} 
 		keyboard.inline_keyboard = {
 			{
-				{text = "> پاک کردن", callback_data="/cleanrules:"..matches[2]}
+				{text = "♦️پاک کردن♦️", callback_data="/cleanrules:"..matches[2]}
 			},
 			{ 
-				{text = "> بازگشت", callback_data="/more:"..matches[2]}
+				{text = "♦️بازگشت♦️", callback_data="/more:"..matches[2]}
 			}
 		}
   end
@@ -2393,14 +2393,14 @@ if matches[1] == '/cleanrules' then
 		keyboard = {} 
 		keyboard.inline_keyboard = {
 			{
-				{text = "> Back", callback_data="/rules:"..matches[2]}
+				{text = "♦️Back♦️", callback_data="/rules:"..matches[2]}
 			}
 		}
   elseif lang then
 		keyboard = {} 
 		keyboard.inline_keyboard = {
 			{
-				{text = "> بازگشت", callback_data="/rules:"..matches[2]}
+				{text = "♦️بازگشت♦️", callback_data="/rules:"..matches[2]}
 			}
 		}
   end
@@ -2437,19 +2437,19 @@ end
 		if not lang then
 		keyboard.inline_keyboard = {
 			{
-				{text = "> Clean White List", callback_data="/cleanwhitelists:"..matches[2]}
+				{text = "♦️Clean White List♦️", callback_data="/cleanwhitelists:"..matches[2]}
 			},
 			{ 
-				{text = "> Back", callback_data="/more:"..matches[2]}
+				{text = "♦️Back♦️", callback_data="/more:"..matches[2]}
 			}
 		}
 		else
 		keyboard.inline_keyboard = {
 			{
-				{text = "> حذف لیست سفید", callback_data="/cleanwhitelists:"..matches[2]}
+				{text = "♦️حذف لیست سفید♦️", callback_data="/cleanwhitelists:"..matches[2]}
 			},
 			{ 
-				{text = "> بازگشت", callback_data="/more:"..matches[2]}
+				{text = "♦️بازگشت♦️", callback_data="/more:"..matches[2]}
 			}
 		}
 		end
@@ -2487,14 +2487,14 @@ if matches[1] == '/cleanwhitelists' then
 		keyboard.inline_keyboard = {
 
 			{ 
-				{text = "> Back", callback_data="/more:"..matches[2]}
+				{text = "♦️Back♦️", callback_data="/more:"..matches[2]}
 			}
 		}
 		else
 				keyboard.inline_keyboard = {
 
 			{ 
-				{text = "> بازگشت", callback_data="/more:"..matches[2]}
+				{text = "♦️بازگشت♦️", callback_data="/more:"..matches[2]}
 			}
 		}
 		end
@@ -2528,19 +2528,19 @@ if not is_mod1(matches[2], msg.from.id) then
 		if not lang then
 		keyboard.inline_keyboard = {
 			{ 
-				{text = "> Clean Welcome Message", callback_data="/cleanwlcmsg:"..matches[2]}
+				{text = "♦️Clean Welcome Message♦️", callback_data="/cleanwlcmsg:"..matches[2]}
 			},
 			{ 
-				{text = "> Back", callback_data="/more:"..matches[2]}
+				{text = "♦️Back♦️", callback_data="/more:"..matches[2]}
 			}
 		}
 		else
 		keyboard.inline_keyboard = {
 			{ 
-				{text = "> حذف پیام خوشامد", callback_data="/cleanwlcmsg:"..matches[2]}
+				{text = "♦️حذف پیام خوشامد♦️", callback_data="/cleanwlcmsg:"..matches[2]}
 			},
 			{ 
-				{text = "> بازگشت", callback_data="/more:"..matches[2]}
+				{text = "♦️بازگشت♦️", callback_data="/more:"..matches[2]}
 			}
 		}
 		end
@@ -2577,14 +2577,14 @@ local keyboard = {}
 		keyboard.inline_keyboard = {
 
 			{ 
-				{text = "> Back", callback_data="/more:"..matches[2]}
+				{text = "♦️Back♦️", callback_data="/more:"..matches[2]}
 			}
 		}
 		else
 				keyboard.inline_keyboard = {
 
 			{ 
-				{text = "> بازگشت", callback_data="/more:"..matches[2]}
+				{text = "♦️بازگشت♦️", callback_data="/more:"..matches[2]}
 			}
 		}
 		end
@@ -2632,14 +2632,14 @@ local text = [[]]
 		keyboard = {} 
 		keyboard.inline_keyboard = {
 			{
-				{text = "> Back", callback_data="/beyond:"..matches[2]}
+				{text = "♦️Back♦️", callback_data="/beyond:"..matches[2]}
 			}
 		}
   elseif lang then
 		keyboard = {} 
 		keyboard.inline_keyboard = {
 			{
-				{text = "> بازگشت", callback_data="/beyond:"..matches[2]}
+				{text = "♦️بازگشت♦️", callback_data="/beyond:"..matches[2]}
 			}
 		}
   end
@@ -2651,14 +2651,14 @@ local text = [[]]
 		keyboard = {} 
 		keyboard.inline_keyboard = {
 			{
-				{text = "> Back", callback_data="/beyond:"..matches[2]}
+				{text = "♦️Back♦️", callback_data="/beyond:"..matches[2]}
 			}
 		}
   elseif lang then
 		keyboard = {} 
 		keyboard.inline_keyboard = {
 			{
-				{text = "> بازگشت", callback_data="/beyond:"..matches[2]}
+				{text = "♦️بازگشت♦️", callback_data="/beyond:"..matches[2]}
 			}
 		}
   end
