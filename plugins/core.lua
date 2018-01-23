@@ -83,25 +83,25 @@ local settings = data[tostring(GP_id)]["settings"]
 			{text = '♦️Flood Sensitivity♦️', callback_data = 'BeyondTeam'}
 		},
 		{
-			{text = "🔺", callback_data='/floodup:'..GP_id}, 
+			{text = "🔼", callback_data='/floodup:'..GP_id}, 
 			{text = tostring(settings.num_msg_max), callback_data="BeyondTeam"},
-			{text = "🔻", callback_data='/flooddown:'..GP_id}
+			{text = "🔽", callback_data='/flooddown:'..GP_id}
 		},
 		{
 			{text = '♦️Character Sensitivity♦️', callback_data = 'BeyondTeam'}
 		},
 		{
-			{text = "🔺", callback_data='/charup:'..GP_id}, 
+			{text = "🔼", callback_data='/charup:'..GP_id}, 
 			{text = tostring(settings.set_char), callback_data="BeyondTeam"},
-			{text = "🔻", callback_data='/chardown:'..GP_id}
+			{text = "🔽", callback_data='/chardown:'..GP_id}
 		},
 		{
 			{text = '♦️Flood Check Time♦️', callback_data = 'BeyondTeam'}
 		},
 		{
-			{text = "🔺", callback_data='/floodtimeup:'..GP_id}, 
+			{text = "🔼", callback_data='/floodtimeup:'..GP_id}, 
 			{text = tostring(settings.time_check), callback_data="BeyondTeam"},
-			{text = "🔻", callback_data='/floodtimedown:'..GP_id}
+			{text = "🔽", callback_data='/floodtimedown:'..GP_id}
 		},
 		{
 			{text = '♦️Back♦️', callback_data = '/settings:'..GP_id}
@@ -115,25 +115,25 @@ local settings = data[tostring(GP_id)]["settings"]
 			{text = '♦️حداکثر پیام های مکرر♦️', callback_data = 'BeyondTeam'}
 		},
 		{
-			{text = "🔺", callback_data='/floodup:'..GP_id}, 
+			{text = "🔼", callback_data='/floodup:'..GP_id}, 
 			{text = tostring(settings.num_msg_max), callback_data="BeyondTeam"},
-			{text = "🔻", callback_data='/flooddown:'..GP_id}
+			{text = "🔽", callback_data='/flooddown:'..GP_id}
 		},
 		{
 			{text = '♦️حداکثر حروف مجاز♦️', callback_data = 'BeyondTeam'}
 		},
 		{
-			{text = "🔺", callback_data='/charup:'..GP_id}, 
+			{text = "🔼", callback_data='/charup:'..GP_id}, 
 			{text = tostring(settings.set_char), callback_data="BeyondTeam"},
-			{text = "🔻", callback_data='/chardown:'..GP_id}
+			{text = "🔽", callback_data='/chardown:'..GP_id}
 		},
 		{
 			{text = '♦️زمان بررسی پیام های مکرر♦️', callback_data = 'BeyondTeam'}
 		},
 		{
-			{text = "🔺", callback_data='/floodtimeup:'..GP_id}, 
+			{text = "🔼", callback_data='/floodtimeup:'..GP_id}, 
 			{text = tostring(settings.time_check), callback_data="BeyondTeam"},
-			{text = "🔻", callback_data='/floodtimedown:'..GP_id}
+			{text = "🔽", callback_data='/floodtimedown:'..GP_id}
 		},
 		{
 			{text = '♦️بـرگـشــت♦️', callback_data = '/settings:'..GP_id}
